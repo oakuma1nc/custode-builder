@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Custode — use the real app</title>
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 40rem; margin: 3rem auto; padding: 0 1.25rem; line-height: 1.55; color: #2d2d2d; }
+    code { background: #f4f1ec; padding: 0.15rem 0.4rem; border-radius: 4px; font-size: 0.9em; }
+    a { color: #1a1a2e; }
+  </style>
+</head>
+<body>
+  <h1>Custode Builder</h1>
+  <p>The marketing funnel (hero → how it works → prompt to create → preview paywall) is served by PHP at the site root, not this static file.</p>
+  <p>From the project root, run:</p>
+  <pre><code>php -S 127.0.0.1:8080 index.php</code></pre>
+  <p>Then open <a href="http://127.0.0.1:8080/">http://127.0.0.1:8080/</a> for the landing page, <a href="http://127.0.0.1:8080/start">http://127.0.0.1:8080/start</a> for the creation wizard, and <a href="http://127.0.0.1:8080/admin">http://127.0.0.1:8080/admin</a> for admin sign-in.</p>
+</body>
+</html>

@@ -1,0 +1,15 @@
+# Environment
+.env
+
+# Dependencies
+/vendor/
+composer.phar
+
+# Storage
+/storage/logs/*.log
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

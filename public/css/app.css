@@ -1,0 +1,23 @@
+/* Custode Builder — GrapeJS + tiny globals */
+html,
+body {
+  height: 100%;
+}
+
+#gjs {
+  border: none;
+}
+
+/* GrapeJS chrome — match marketing accent (#e8c547) */
+.gjs-one-bg {
+  background-color: #111111;
+}
+
+.gjs-two-color {
+  color: #f5f5f5;
+}
+
+.gjs-four-color,
+.gjs-four-color-h:hover {
+  color: #e8c547;
+}

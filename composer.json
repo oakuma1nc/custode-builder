@@ -1,0 +1,15 @@
+{
+    "name": "custode/builder",
+    "description": "Custode Builder — automated website generation platform",
+    "type": "project",
+    "require": {
+        "php": ">=8.1",
+        "stripe/stripe-php": "^16.0",
+        "scorpionslh/cpanel-uapi-php-class": "dev-master"
+    },
+  "config": {
+    "sort-packages": true
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
