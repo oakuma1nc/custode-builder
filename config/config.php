@@ -60,9 +60,16 @@ return [
         'pass' => getenv('DB_PASS') ?: '',
         'charset' => 'utf8mb4',
     ],
+    'generation' => [
+        'provider' => getenv('GENERATION_PROVIDER') ?: 'claude',
+    ],
     'anthropic' => [
         'api_key' => getenv('ANTHROPIC_API_KEY') ?: '',
-        'model' => getenv('ANTHROPIC_MODEL') ?: 'claude-sonnet-4-6',
+        'model'   => getenv('ANTHROPIC_MODEL') ?: 'claude-sonnet-4-6',
+    ],
+    'kimi' => [
+        'api_key' => getenv('KIMI_API_KEY') ?: '',
+        'model'   => getenv('KIMI_MODEL') ?: 'kimi-k2.5',
     ],
     'stripe' => [
         'secret_key' => getenv('STRIPE_SECRET_KEY') ?: '',

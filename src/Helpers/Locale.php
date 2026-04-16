@@ -6,7 +6,7 @@ namespace Custode\Helpers;
 
 final class Locale
 {
-    public const ALLOWED = ['it', 'de', 'en', 'sr'];
+    public const ALLOWED = ['it', 'de', 'en', 'fr'];
 
     public const COOKIE = 'custode_lang';
 

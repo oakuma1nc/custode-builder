@@ -76,7 +76,7 @@ body.cas-body {
   right: -180px;
   width: 480px;
   height: 480px;
-  background: radial-gradient(circle, var(--accent-glow) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(232, 197, 71, 0.06) 0%, transparent 70%);
   pointer-events: none;
   z-index: 0;
 }
@@ -120,9 +120,11 @@ body.cas-body {
 }
 
 .cas-eyebrow {
-  font-size: 12px;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
   color: var(--text-muted);
-  text-transform: lowercase;
+  text-transform: uppercase;
   margin: 0 0 4px;
 }
 
@@ -165,8 +167,10 @@ body.cas-body {
 
 .cas-label {
   display: block;
-  font-size: 13px;
-  font-weight: 600;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
   color: var(--text-secondary);
   margin-bottom: 6px;
 }
@@ -213,9 +217,11 @@ select.cas-input {
   align-items: center;
   justify-content: center;
   gap: 8px;
-  font-size: 15px;
-  font-weight: 600;
-  padding: 12px 24px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  padding: 13px 24px;
   border-radius: 100px;
   border: none;
   cursor: pointer;
@@ -287,9 +293,11 @@ select.cas-input {
 }
 
 .cas-header-eyebrow {
-  font-size: 11px;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
   color: var(--text-muted);
-  text-transform: lowercase;
+  text-transform: uppercase;
   margin: 0 0 2px;
 }
 
@@ -366,9 +374,9 @@ select.cas-input {
 .cas-table thead th {
   text-align: left;
   padding: 12px 16px;
-  font-size: 11px;
+  font-size: 9px;
   font-weight: 700;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--text-muted);
   border-bottom: 1px solid var(--border);
@@ -423,10 +431,12 @@ select.cas-input {
 .cas-badge {
   display: inline-flex;
   align-items: center;
-  padding: 4px 10px;
+  padding: 3px 10px;
   border-radius: 100px;
-  font-size: 11px;
-  font-weight: 600;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
   background: var(--surface-2);
   color: var(--text-secondary);
   border: 1px solid var(--border);
@@ -469,7 +479,9 @@ select.cas-input {
 }
 
 .cas-action-outline {
-  font-size: 12px;
+  font-size: 10px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
   padding: 4px 10px;
   border: 1px solid rgba(232, 197, 71, 0.35);
   border-radius: 100px;
@@ -597,9 +609,11 @@ select.cas-input {
 }
 
 .cas-fieldset-legend {
-  font-size: 18px;
+  font-size: 11px;
   font-weight: 700;
-  color: var(--text);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-muted);
   margin-bottom: 16px;
   padding: 0;
 }

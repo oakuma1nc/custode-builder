@@ -12,7 +12,7 @@ use Custode\Helpers\Response;
 use Custode\Helpers\Str;
 use Custode\Models\Client;
 use Custode\Models\Site;
-use Custode\Services\ClaudeService;
+use Custode\Services\GeneratorFactory;
 use Custode\Services\MailService;
 use Throwable;
 
@@ -54,7 +54,7 @@ final class BriefController
         $businessName = trim((string) ($json['business_name'] ?? ''));
         $businessType = trim((string) ($json['business_type'] ?? 'restaurant'));
 
-        $allowedTypes = ['restaurant', 'cafe', 'bar', 'bakery', 'hotel', 'retail', 'service', 'other'];
+        $allowedTypes = ['restaurant', 'hotel', 'interior_design', 'bottega', 'immobiliare', 'shop', 'service', 'other'];
         if (!in_array($businessType, $allowedTypes, true)) {
             $businessType = 'restaurant';
         }
@@ -107,7 +107,7 @@ final class BriefController
             return;
         }
 
-        $gen = new ClaudeService();
+        $gen = GeneratorFactory::make();
         try {
             $ok = $gen->generateForSite($siteId);
         } catch (Throwable) {

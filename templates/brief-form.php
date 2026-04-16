@@ -4,14 +4,14 @@
 <header class="cas-brief-header">
   <div class="cas-brief-header-inner">
     <a href="/" class="cas-header-brand" style="text-decoration:none;color:inherit;">
-      <img src="/public/img/custode-logo.svg" alt="" width="32" height="32">
-      <span class="cas-link" style="font-size:16px;">Custode</span>
+      <img src="/public/img/submark-key.svg" alt="" width="32" height="32">
+      <span class="cas-link" style="font-size:16px;">Custode Builder</span>
     </a>
     <span class="cas-small">Website brief</span>
   </div>
 </header>
 <main class="cas-brief-main">
-  <h1 class="cas-title" style="font-size:28px;margin-bottom:8px;">Tell us about your business</h1>
+  <h1 class="cas-title" style="font-size:26px;letter-spacing:-0.5px;margin-bottom:8px;">Tell us about your business</h1>
   <p class="cas-lead" style="margin-bottom:28px;">We use this brief to generate a tailored one-page site preview. Most fields are optional beyond the basics.</p>
   <div id="brief-alert" class="cas-alert cas-alert--error is-hidden" role="alert"></div>
   <form id="brief-form" class="cas-stack" style="gap:0;" novalidate>

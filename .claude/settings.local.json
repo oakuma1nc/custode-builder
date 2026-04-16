@@ -1,0 +1,28 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:oakuma.com)",
+      "Bash(where php *)",
+      "Read(//c/xampp/php/**)",
+      "Read(//c/laragon/bin/**)",
+      "Read(//c/Program Files/**)",
+      "Bash(powershell.exe *)",
+      "WebFetch(domain:lightweight.info)",
+      "WebFetch(domain:platform.moonshot.cn)",
+      "WebFetch(domain:developers.webflow.com)",
+      "WebFetch(domain:platform.kimi.com)",
+      "WebFetch(domain:durable.co)",
+      "WebFetch(domain:durable.com)",
+      "WebFetch(domain:10web.io)",
+      "WebFetch(domain:docs.sitejet.io)",
+      "WebFetch(domain:api.moonshot.cn)",
+      "Bash(C:/php82/php.exe -r ' *)",
+      "Bash(C:/php82/php.exe *)",
+      "WebFetch(domain:custode.digital)",
+      "Bash(\"C:/php82/php.exe\" -l \"D:/Oakuma/custode-builder/custode-builder/config/i18n/landing/it.php\")",
+      "Bash(\"C:/php82/php.exe\" -l \"D:/Oakuma/custode-builder/custode-builder/config/i18n/landing/en.php\")",
+      "Bash(\"C:/php82/php.exe\" -l \"D:/Oakuma/custode-builder/custode-builder/config/i18n/landing/de.php\")",
+      "Bash(\"C:/php82/php.exe\" -l \"D:/Oakuma/custode-builder/custode-builder/config/i18n/landing/fr.php\")"
+    ]
+  }
+}

@@ -34,9 +34,9 @@
   .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
   .section { padding: 120px 0; }
   .eyebrow {
-    font-size: 13px;
-    font-weight: 600;
-    letter-spacing: 2px;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
     text-transform: uppercase;
     color: var(--accent);
     margin-bottom: 16px;
@@ -68,15 +68,17 @@
     justify-content: center;
     gap: 2px;
     padding: 8px 0;
-    background: rgba(10,10,10,0.8);
+    background: rgba(10,10,10,0.9);
     backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
     border-bottom: 1px solid var(--border);
   }
   .lang-bar a {
-    font-size: 12px;
-    font-weight: 600;
-    letter-spacing: 1px;
-    padding: 6px 14px;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 5px 12px;
     border-radius: 100px;
     color: var(--text-muted);
     text-decoration: none;
@@ -119,11 +121,13 @@
   .nav-logo span { color: var(--accent); }
   .nav-links { display: flex; align-items: center; gap: 4px; }
   .nav-links a {
-    font-size: 14px;
-    font-weight: 500;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
     color: var(--text-secondary);
     text-decoration: none;
-    padding: 8px 16px;
+    padding: 8px 14px;
     border-radius: 100px;
     transition: all 0.2s;
   }
@@ -131,8 +135,11 @@
   .nav-cta {
     background: var(--accent) !important;
     color: var(--bg) !important;
-    font-weight: 600 !important;
-    padding: 10px 24px !important;
+    font-weight: 700 !important;
+    font-size: 11px !important;
+    letter-spacing: 0.09em !important;
+    text-transform: uppercase !important;
+    padding: 10px 22px !important;
   }
   .nav-cta:hover { background: var(--accent-dim) !important; }
 
@@ -163,7 +170,7 @@
     right: -200px;
     width: 600px;
     height: 600px;
-    background: radial-gradient(circle, var(--accent-glow) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(232, 197, 71, 0.06) 0%, transparent 70%);
     pointer-events: none;
   }
   .hero-grid {
@@ -195,8 +202,10 @@
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    font-size: 15px;
-    font-weight: 600;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
     padding: 14px 28px;
     border-radius: 100px;
     text-decoration: none;
@@ -210,11 +219,11 @@
   }
   .btn-primary:hover { background: var(--accent-dim); transform: translateY(-1px); }
   .btn-secondary {
-    background: var(--surface-2);
-    color: var(--text);
+    background: transparent;
+    color: var(--text-secondary);
     border: 1px solid var(--border-light);
   }
-  .btn-secondary:hover { border-color: var(--text-muted); }
+  .btn-secondary:hover { border-color: var(--text-muted); color: var(--text); }
 
   /* Before / After card */
   .ba-card {
@@ -230,9 +239,11 @@
     right: 16px;
     background: var(--accent);
     color: var(--bg);
-    font-size: 12px;
+    font-size: 9px;
     font-weight: 700;
-    padding: 6px 14px;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    padding: 5px 12px;
     border-radius: 100px;
     z-index: 2;
   }
@@ -240,9 +251,9 @@
   .ba-side { padding: 32px; position: relative; }
   .ba-side:first-child { border-right: 1px solid var(--border); }
   .ba-label {
-    font-size: 11px;
+    font-size: 9px;
     font-weight: 700;
-    letter-spacing: 2px;
+    letter-spacing: 0.14em;
     text-transform: uppercase;
     margin-bottom: 20px;
   }
@@ -316,13 +327,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 48px;
-    height: 48px;
-    border-radius: 14px;
-    background: var(--accent-glow);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: transparent;
+    border: 1px solid rgba(232, 197, 71, 0.35);
     color: var(--accent);
-    font-size: 20px;
-    font-weight: 800;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
     margin-bottom: 24px;
   }
   .step-card h3 {
@@ -369,13 +382,15 @@
     position: absolute;
     top: 12px;
     left: 12px;
-    background: var(--accent-glow);
+    background: transparent;
+    border: 1px solid rgba(232, 197, 71, 0.3);
     color: var(--accent);
-    font-size: 11px;
+    font-size: 9px;
     font-weight: 700;
-    padding: 4px 12px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 4px 10px;
     border-radius: 100px;
-    letter-spacing: 0.5px;
   }
   .port-info { padding: 24px; }
   .port-biz {
@@ -432,17 +447,17 @@
   .price-card:hover { border-color: var(--accent); }
   .price-card.featured {
     border-color: var(--accent);
-    box-shadow: 0 0 40px var(--accent-glow);
   }
   .price-tag {
     display: inline-block;
-    font-size: 11px;
+    font-size: 9px;
     font-weight: 700;
-    letter-spacing: 1.5px;
+    letter-spacing: 0.12em;
     text-transform: uppercase;
     color: var(--accent);
-    background: var(--accent-glow);
-    padding: 4px 12px;
+    background: transparent;
+    border: 1px solid rgba(232, 197, 71, 0.3);
+    padding: 4px 10px;
     border-radius: 100px;
     margin-bottom: 16px;
     width: fit-content;
@@ -453,9 +468,11 @@
     right: 24px;
     background: var(--accent);
     color: var(--bg);
-    font-size: 11px;
+    font-size: 9px;
     font-weight: 700;
-    padding: 4px 14px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 4px 12px;
     border-radius: 100px;
   }
   .price-name {
@@ -507,37 +524,57 @@
 
   /* CONTACT BAND */
   .cband {
-    background: linear-gradient(135deg, var(--accent) 0%, #D4AF37 100%);
-    padding: 80px 0;
+    background: var(--surface);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    padding: 100px 0;
     text-align: center;
   }
   .cband h2 {
-    font-size: clamp(28px, 4vw, 42px);
+    font-size: clamp(28px, 4vw, 48px);
     font-weight: 800;
-    color: var(--bg);
-    letter-spacing: -1px;
-    margin-bottom: 12px;
+    color: var(--text);
+    letter-spacing: -1.5px;
+    line-height: 1.1;
+    margin-bottom: 16px;
+  }
+  .cband h2 em {
+    font-style: normal;
+    color: var(--accent);
   }
   .cband p {
     font-size: 17px;
-    color: rgba(10,10,10,0.7);
-    margin-bottom: 36px;
+    color: var(--text-secondary);
+    margin-bottom: 40px;
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.7;
   }
   .cband-btns { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
   .cband-btn {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    padding: 14px 28px;
-    background: var(--bg);
-    color: var(--text);
-    font-size: 15px;
-    font-weight: 600;
+    padding: 13px 26px;
+    background: transparent;
+    color: var(--text-secondary);
+    border: 1px solid var(--border-light);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
     border-radius: 100px;
     text-decoration: none;
     transition: all 0.25s;
   }
-  .cband-btn:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.3); }
+  .cband-btn:hover { border-color: var(--text-muted); color: var(--text); transform: translateY(-1px); }
+  .cband-btn--primary {
+    background: var(--accent);
+    color: var(--bg);
+    border-color: var(--accent);
+  }
+  .cband-btn--primary:hover { background: var(--accent-dim); border-color: var(--accent-dim); color: var(--bg); transform: translateY(-1px); }
 
   /* FAQ */
   .faq-list {
@@ -598,37 +635,42 @@
     line-height: 1.8;
     margin-bottom: 20px;
   }
-  .about-tagline {
-    font-size: 24px;
-    font-weight: 800;
-    color: var(--accent);
-    margin-top: 32px;
-    letter-spacing: -0.5px;
-  }
+  /* .about-tagline removed — content moved to about-emblem-sub */
   .about-visual {
     display: flex;
     align-items: center;
     justify-content: center;
   }
   .about-emblem {
-    width: 280px;
-    height: 280px;
-    border-radius: 50%;
-    background: var(--accent-glow);
-    border: 2px solid var(--accent);
+    width: 300px;
+    height: 300px;
+    background: var(--surface-2);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 8px;
+    gap: 16px;
+    padding: 40px;
+    text-align: center;
   }
-  .about-emblem-icon { font-size: 64px; }
+  .about-emblem-logo {
+    width: 64px;
+    height: 64px;
+    opacity: 0.9;
+  }
   .about-emblem-text {
-    font-size: 13px;
+    font-size: 11px;
     font-weight: 700;
-    letter-spacing: 3px;
+    letter-spacing: 0.18em;
     text-transform: uppercase;
     color: var(--accent);
+  }
+  .about-emblem-sub {
+    font-size: 13px;
+    color: var(--text-muted);
+    line-height: 1.6;
   }
 
   /* CONTACT PAGE */
@@ -711,9 +753,9 @@
     margin-top: 12px;
   }
   .footer-col-title {
-    font-size: 12px;
+    font-size: 9px;
     font-weight: 700;
-    letter-spacing: 1.5px;
+    letter-spacing: 0.14em;
     text-transform: uppercase;
     color: var(--text-muted);
     margin-bottom: 20px;
@@ -742,7 +784,10 @@
   }
   .footer-legal-links { display: flex; gap: 24px; }
   .footer-legal-links a {
-    font-size: 13px;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
     color: var(--text-muted);
     text-decoration: none;
   }
@@ -827,9 +872,11 @@
   }
   .lang-bar { gap: 4px; flex-wrap: wrap; }
   .admin-pill {
-    font-size: 11px;
-    font-weight: 600;
-    padding: 6px 12px;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    padding: 5px 12px;
     border-radius: 100px;
     border: 1px solid var(--border);
     color: var(--text-muted);
@@ -882,7 +929,7 @@
   }
   .wizard-card h1 { font-size: clamp(22px, 4vw, 28px); font-weight: 800; letter-spacing: -0.5px; margin-bottom: 8px; }
   .wizard-card .wizard-lead { font-size: 14px; color: var(--text-secondary); margin-bottom: 20px; line-height: 1.6; }
-  .wizard-step-label { font-size: 12px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: var(--accent); margin-bottom: 8px; }
+  .wizard-step-label { font-size: 10px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); margin-bottom: 8px; }
   .wizard-step-title { font-size: 18px; font-weight: 700; margin-bottom: 6px; }
   .wizard-step-sub { font-size: 14px; color: var(--text-secondary); margin-bottom: 20px; line-height: 1.55; }
   .wizard-bars { display: flex; gap: 6px; margin-bottom: 24px; }
@@ -902,7 +949,7 @@
     max-height: 120px;
     overflow-y: auto;
   }
-  .wizard-review-box strong { display: block; color: var(--text); font-size: 11px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 6px; }
+  .wizard-review-box strong { display: block; color: var(--text); font-size: 9px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em; margin-bottom: 6px; }
   .wizard-actions { display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-top: 24px; flex-wrap: wrap; }
   .wizard-actions .btn-secondary { flex: 1; min-width: 120px; justify-content: center; }
   .wizard-actions .btn-primary { flex: 1; min-width: 140px; justify-content: center; }
@@ -914,6 +961,6 @@
     text-align: center;
   }
   .wizard-home-card p { color: var(--text-secondary); font-size: 15px; line-height: 1.65; margin-bottom: 20px; }
-  .wizard-card label { display: block; font-size: 13px; font-weight: 600; color: var(--text-secondary); margin-bottom: 6px; }
+  .wizard-card label { display: block; font-size: 10px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-secondary); margin-bottom: 6px; }
   .wizard-card .form-input { width: 100%; margin-bottom: 0; }
   .wizard-card #w_description.form-input { min-height: 200px; resize: vertical; line-height: 1.5; }

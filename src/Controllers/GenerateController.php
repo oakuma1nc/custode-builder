@@ -10,7 +10,7 @@ use Custode\Helpers\Csrf;
 use Custode\Helpers\RateLimiter;
 use Custode\Helpers\Response;
 use Custode\Models\Site;
-use Custode\Services\ClaudeService;
+use Custode\Services\GeneratorFactory;
 use Throwable;
 
 final class GenerateController
@@ -36,7 +36,7 @@ final class GenerateController
             Response::json(['error' => 'Site not found'], 404);
             return;
         }
-        $gen = new ClaudeService();
+        $gen = GeneratorFactory::make();
         try {
             $ok = $gen->generateForSite($id);
         } catch (Throwable $e) {

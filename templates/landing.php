@@ -23,7 +23,7 @@ $stdMonth = ($has_monthly && $monthly_chf !== '') ? $monthly_chf : '49';
   <title><?= $h($title) ?></title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/public/css/landing-custode.css">
 </head>
 <body id="top">
@@ -37,8 +37,8 @@ $stdMonth = ($has_monthly && $monthly_chf !== '') ? $monthly_chf : '49';
 <nav>
   <div class="nav-inner">
     <a href="/" class="nav-logo">
-      <img src="/public/img/custode-logo.svg" alt="" class="nav-logo-mark" width="32" height="32">
-      CUSTODE<span>.</span>
+      <img src="/public/img/submark-key.svg" alt="" class="nav-logo-mark" width="32" height="32">
+      CUSTODE BUILDER
     </a>
     <div class="nav-links" id="nav-links">
       <a href="#how"><?= $h((string) ($t['nav_how'] ?? '')) ?></a>
@@ -226,9 +226,9 @@ $stdMonth = ($has_monthly && $monthly_chf !== '') ? $monthly_chf : '49';
     <h2><?= $h((string) ($t['cband_title'] ?? '')) ?></h2>
     <p><?= $h((string) ($t['cband_sub'] ?? '')) ?></p>
     <div class="cband-btns">
-      <a href="#contact" class="cband-btn">&#128172; <?= $h((string) ($t['cband_wa'] ?? '')) ?></a>
-      <a href="#contact" class="cband-btn">&#9992; <?= $h((string) ($t['cband_tg'] ?? '')) ?></a>
-      <a href="#contact" class="cband-btn">&#9742; <?= $h((string) ($t['cband_call'] ?? '')) ?></a>
+      <a href="#contact" class="cband-btn cband-btn--primary"><?= $h((string) ($t['cband_wa'] ?? '')) ?></a>
+      <a href="#contact" class="cband-btn"><?= $h((string) ($t['cband_tg'] ?? '')) ?></a>
+      <a href="#contact" class="cband-btn"><?= $h((string) ($t['cband_call'] ?? '')) ?></a>
     </div>
   </div>
 </section>
@@ -266,13 +266,13 @@ $stdMonth = ($has_monthly && $monthly_chf !== '') ? $monthly_chf : '49';
           <p><?= $h((string) ($t['about_p2'] ?? '')) ?></p>
           <p><?= $h((string) ($t['about_p3'] ?? '')) ?></p>
         </div>
-        <div class="about-tagline"><?= $h((string) ($t['about_tagline'] ?? '')) ?></div>
-        <p style="margin-top: 12px; font-size: 13px; color: var(--text-muted);"><?= $h((string) ($t['about_oakuma'] ?? '')) ?></p>
+        <p style="margin-top: 20px; font-size: 13px; color: var(--text-muted); letter-spacing: 0.02em;"><?= $h((string) ($t['about_oakuma'] ?? '')) ?></p>
       </div>
       <div class="about-visual scroll-reveal">
         <div class="about-emblem">
-          <div class="about-emblem-icon">&#9965;</div>
-          <div class="about-emblem-text">Custode</div>
+          <img src="/public/img/submark-key.svg" alt="" class="about-emblem-logo">
+          <div class="about-emblem-text">Custode Builder</div>
+          <div class="about-emblem-sub"><?= $h((string) ($t['about_tagline'] ?? '')) ?></div>
         </div>
       </div>
     </div>
@@ -323,8 +323,8 @@ $stdMonth = ($has_monthly && $monthly_chf !== '') ? $monthly_chf : '49';
     <div class="footer-grid">
       <div>
         <a href="/" class="nav-logo" style="font-size:22px;display:inline-flex;align-items:center;gap:10px;">
-          <img src="/public/img/custode-logo.svg" alt="" class="nav-logo-mark" width="36" height="36">
-          CUSTODE<span style="color:var(--accent);">.</span>
+          <img src="/public/img/submark-key.svg" alt="" class="nav-logo-mark" width="36" height="36">
+          CUSTODE BUILDER
         </a>
         <p class="footer-brand-tagline"><?= $h((string) ($t['footer_tagline'] ?? '')) ?></p>
       </div>

@@ -103,7 +103,7 @@ return [
     'contact_title' => 'Hajde da pričamo — i napravimo pregled.',
     'contact_sub' => 'WhatsApp, Telegram ili telefon? Za generisanje sajta pomoću AI otvorite vođeni čarobnjak — korak po korak.',
     'home_wizard_teaser' => 'Generisanje više nije na ovoj stranici: četiri koraka u čarobnjaku, zatim ista pregled kao i ranije.',
-    'home_wizard_button' => 'Otvori čarobnjak',
+    'home_wizard_button' => 'Crea subito il tuo sito web',
     'wizard_meta_title' => 'Vođeno kreiranje — Custode',
     'wizard_title' => 'Vođeno kreiranje',
     'wizard_sub' => 'Četiri koraka. Isti podaci ka /api/brief — jasniji tok.',
